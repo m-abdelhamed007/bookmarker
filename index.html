@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="container">
+        <h1 class=" m-5 text-center fw-bold ss">Bookmarker</h1>
+        <div class="line mb-5"></div>
+        <h2 class="  mb-5 " > <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i>
+        </h2>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class=" mb-3">
+                        <label for="title"><i class="fa-solid fa-book-bookmark mx-2"></i>Site Name</label>
+                        <input type="text" class="form-control" placeholder="Bookmark Name" id="title">
+                        <label id="error" class="form-check-label bg-danger" ></label>
+                    </div>
+                    <div class=" mb-3">
+                        <label for="url"><i class="fa-solid fa-link mx-2"></i> Site URL</label>
+                        <input type="text" class="form-control" placeholder="Website URL" id="url">
+                    </div>
+                    <div class="text-center">
+                        <button   id="addBtn" class=" btn  btn-danger  m-auto mt-4 py-2 px-4">submit</button>
+                    </div>
+                </div>
+            </div>
+                    <div class="line mb-2 mt-3"></div>
+            <table class="table container">
+          <thead ">
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+          </thead>
+          <tbody id="tbody" class="fw-normal"></tbody>
+        </table>
+    </main>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
